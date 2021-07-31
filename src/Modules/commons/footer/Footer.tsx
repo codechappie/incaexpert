@@ -92,12 +92,12 @@ const Footer = () => {
                         </span>
 
                         <div className={style.networking}>
-                            <div className={style.item}>
+                            <a href="https://facebook.com" target="_blank" rel="noreferrer" className={style.item}>
                                 <img src={facebookIcon} alt="" />
-                            </div>
-                            <div className={style.item}>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noreferrer" className={style.item}>
                                 <img src={instagramIcon} alt="" />
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

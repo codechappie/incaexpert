@@ -268,8 +268,12 @@
           justify-content: center;
           gap: 20px;
 
+          a{
+            padding: 0;
+          }
           img {
             max-width: 42px;
+            cursor: pointer;
           }
         }
       }
