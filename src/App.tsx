@@ -1,10 +1,19 @@
-import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import AboutUs from './Modules/about-us/AboutUs';
+import Footer from './Modules/commons/footer/Footer';
+import Navbar from './Modules/commons/navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Init App</h1>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path="/" component={AboutUs} />
+
+        <Redirect to="/" />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 

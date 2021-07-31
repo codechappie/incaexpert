@@ -1,0 +1,166 @@
+@import "../../../assets/scss/variables";
+.team {
+  min-height: 400px;
+  background: #f3f3ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  padding-bottom: 50px;
+
+  .team__container {
+    max-width: 1400px;
+    width: 95%;
+    margin-bottom: 30px;
+    display: grid;
+    text-align: center;
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 4rem;
+      font-weight: 700;
+      text-align: center;
+      margin: auto;
+
+      @media screen and (max-width: 1550px) {
+        font-size: 3.5rem;
+      }
+      @media screen and (max-width: 1400px) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 620px){
+        font-size: 2.8rem;
+      }
+    }
+
+    .separator {
+      display: block;
+      width: 70px;
+      height: 10px;
+      background: #000;
+      margin: 30px auto 40px auto;
+    }
+
+    p {
+      max-width: 1200px;
+      margin: auto;
+      font-size: 1.6rem;
+      font-weight: 400;
+      word-spacing: 0.4rem;
+      margin-bottom: 40px;
+
+      @media screen and (max-width: 1550px) {
+        max-width: 1080px;
+        font-size: 1.4rem;
+      }
+      @media screen and (max-width: 1400px) {
+        max-width: 1000px;
+        font-size: 1.3rem;
+      }
+      @media screen and (max-width: 1280px) {
+        max-width: 920px;
+        font-size: 1.2rem;
+      }
+
+      .strong {
+        font-weight: 700;
+      }
+    }
+
+    .people {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 60px;
+      padding-bottom: 40px;
+
+      &__container {
+        max-width: 1500px;
+        width: 100%;
+        display: grid;
+        border: 0.06rem solid #ffffff;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media screen and (max-width: 1080px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 680px) {
+          grid-template-columns: 1fr;
+        }
+
+        .person {
+          text-align: left;
+          border: 0.12rem solid #ffffff;
+          // max-width: 325px;
+          padding: 30px;
+          display: grid;
+          grid-template-rows: 1fr auto;
+          align-items: stretch;
+          justify-items: center;
+          gap: 20px;
+          text-align: center;
+          height: auto;
+
+          @media screen and (max-width: 620px){
+            padding: 24px;
+          }
+
+          .image {
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+          .information {
+            align-self: flex-start;
+          }
+          .name {
+            font-family: "Playfair Display", serif;
+            font-weight: 900;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 1550px) {
+              font-size: 1.7rem;
+            }
+            @media screen and (max-width: 1400px) {
+              font-size: 1.6rem;
+            }
+            @media screen and (max-width: 1280px) {
+              font-size: 1.5rem;
+            }
+          }
+          .detail {
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            min-height: 80px;
+            max-width: 260px;
+            text-align: center;
+          }
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #61805a;
+            font-size: 1.2rem;
+            font-weight: 700;
+            align-self: flex-end;
+
+            @media screen and (max-width: 1400px) {
+              font-size: 1.15rem;
+            }
+            @media screen and (max-width: 1280px) {
+              font-size: 1.11rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

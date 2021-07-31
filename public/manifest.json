@@ -1,8 +1,8 @@
 {
-  "name": "Initial Web App",
-  "short_name": "Initial Web App",
-  "theme_color": "black-translucent",
-  "background_color": "#ffffff",
+  "name": "Inca Expert Travel",
+  "short_name": "Inca Expert",
+  "theme_color": "#e3e0d1",
+  "background_color": "#e3e0d1",
   "display": "standalone",
   "scope": ".",
   "start_url": ".",
